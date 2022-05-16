@@ -1,0 +1,101 @@
+.input {
+  margin: 4rem auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input input {
+  font: inherit;
+  display: block;
+  width: 90%;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.input h2 {
+  color: #096946;
+  text-align: center;
+}
+
+.input input:focus {
+  outline: none;
+  border-color: #46bd91;
+}
+
+.input span {
+  font-size: 12px;
+  padding: 2px;
+  color: red;
+  display: none;
+}
+
+.input input:invalid[focused="true"] {
+  border: 1px solid red;
+}
+
+.input input:invalid[focused="true"] ~ span {
+  display: block;
+}
+
+/* .input select{
+    border-radius: 0.8rem;
+    padding: 6px;
+    margin-right: 100%;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border-color: red;
+     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      color: rgba(255, 255, 255, 0.5);
+  }  */
+
+.input select {
+  background-color: rgba(228, 221, 221, 0.5);
+  color: black;
+  padding: 12px;
+  width: 240px;
+  margin-right: 100%;
+  margin-bottom: 20px;
+  border: none;
+  font-size: 15px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: 0 2px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.input::before {
+  content: "\f13a";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.input select :hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input select option {
+  padding: 30px;
+}
